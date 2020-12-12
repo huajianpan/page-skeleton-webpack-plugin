@@ -76,12 +76,12 @@ module.exports = {
     new SkeletonPlugin({
       pathname: path.resolve(__dirname, `./shell`),
       staticDir: path.resolve(__dirname, './dist'),
-      routes: ['/'],
+      routes: ['/','/search'], 
       port: '7890',
       loading: 'chiaroscuro',
       svg: {
         color: '#EFEFEF',
-        shape: 'circle',
+        shape: 'circle', 
         shapeOpposite: ['.Rating-gray_1kpffd5_0 svg']
       },
       image: {
@@ -116,9 +116,6 @@ module.exports = {
         url: 'https://h5.ele.me'
       }],
       noInfo: false,
-      storagies: {
-        test: '1234'
-      }
     }),
   ],
   resolve: {
